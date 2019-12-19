@@ -65,18 +65,17 @@
 						</div>
 
 						<div>
-							<a href="#" class="txt3">
-								Forgot Password?
+							<a href="../index.html" class="txt3">
+								Kembali
 							</a>
 						</div>
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" id="">
 							Login
 						</button>
 					</div>
-
 				</form>
 			</div>
 		</div>
