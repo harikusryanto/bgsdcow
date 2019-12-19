@@ -17,7 +17,28 @@
     <!-- Core Style CSS -->
     <link rel="stylesheet" href="css/core-style.css">
     <link rel="stylesheet" href="style.css">
-
+    <style>
+        li.dropdown {
+        display: inline-block;
+    }
+ 
+    .dropdown:hover .isi-dropdown {
+        display: block;
+    }
+ 
+    .isi-dropdown a:hover {
+        color: #fff !important;
+    }
+ 
+    .isi-dropdown {
+        position: absolute;
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        background-color: #f9f9f9;
+    }
+    
+    </style>
 </head>
 
 <body>
@@ -72,8 +93,18 @@
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="shop.html">Brand</a></li>
                     <li><a href="shop.html">Open Jastip</a></li>
-                    <li><a href="login/regis.html">Registrasi</a></li>
-                    <li><a href="login/index.html">Login</a></li>
+                    <li class="dropdown"><a href="index.html">Registrasi</a>
+                        <ul class="isi-dropdown">
+                            <li><a href="login/regiscustomer.html">Customer</a></li>
+                            <li><a href="login/regisshopper.html">Shopper</a></li>      
+                        </ul>
+                    </li><br>
+                    <li class="dropdown"><a href="index.html">Login</a>
+                        <ul class="isi-dropdown">
+                            <li><a href="login/logincustomer.html">Customer</a></li>
+                            <li><a href="login/loginshopper">Shopper</a></li>      
+                        </ul>           
+                     </li>
                 </ul>
             </nav>
             <!-- Button Group -->
